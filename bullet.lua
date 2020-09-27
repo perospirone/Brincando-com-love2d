@@ -1,6 +1,5 @@
 Bullet = Object:extend()
 
-
 function Bullet:new(x, y)
   self.image = love.graphics.newImage("images/bullet.png")
   self.x = x
@@ -9,10 +8,6 @@ function Bullet:new(x, y)
   --We'll need these for collision checking
   self.width = self.image:getWidth()
   self.height = self.image:getHeight()
-end
-
-function Bullet:update(dt)
-  self.y = self.y + self.speed * dt
 end
 
 function Bullet:draw()

@@ -17,7 +17,6 @@ function love.update(dt)
     player:keyPressed(key)
   end
 
-
   for i,v in ipairs(listOfBullets) do
     v:update(dt)
     v:checkCollision(enemy)

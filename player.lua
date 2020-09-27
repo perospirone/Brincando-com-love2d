@@ -1,4 +1,3 @@
---! file: player.lua
 Player = Object:extend()
 
 function Player:new()
