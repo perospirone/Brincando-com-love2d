@@ -22,8 +22,6 @@ function love.load()
   currentFrame = 1
 end
 
-
-
 function love.update(dt)
   currentFrame = currentFrame + 10 * dt
   if currentFrame >= 6 then
